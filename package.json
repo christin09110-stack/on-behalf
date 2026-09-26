@@ -1,0 +1,29 @@
+{
+  "name": "on-behalf",
+  "version": "1.0.0",
+  "description": "Alexa+ MCP add-on: one household running another household's admin, with consent on both speakers.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "mcp": "node --no-warnings src/mcp/server.ts",
+    "console": "node --no-warnings src/web/server.ts",
+    "demo": "node --no-warnings src/demo.ts",
+    "bench": "node --no-warnings src/bench/latency.ts",
+    "seed": "node --no-warnings src/seed.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --no-warnings --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.980.0",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^7.0.2"
+  }
+}

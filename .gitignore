@@ -1,0 +1,46 @@
+# Node + TypeScript — for React/Vite dashboards, Chrome extensions, CDK, tooling
+
+node_modules/
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+*.tsbuildinfo
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Package manager artefacts (keep only one lockfile per project intentionally)
+.pnpm-store/
+.yarn/cache/
+.yarn/install-state.gz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite / bundler
+.vite/
+.turbo/
+.next/
+.svelte-kit/
+
+# AWS CDK
+cdk.out/
+cdk.context.json
+
+# Test / coverage
+coverage/
+.nyc_output/
+
+# Editor / OS
+.DS_Store
+
+# Agent / harness scratch
+.harness/
+
+# The local store the console and MCP server write to
+data/
